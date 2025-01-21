@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Preço e Distância</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3VyjqV50kuKkOVEsgF1GzxfRK7vEIl-w&libraries=places"></script>
+</head>
+<body>
+
+    <div class="calculator-container">
+        
+        <!-- Logo -->
+        <div class="logo-container">
+            <img src="https://i.postimg.cc/2yZ59pq8/BKT-Car.png" alt="Logo da Calculadora" class="logo">
+        </div>
+
+        <h2>Cálculo de Preço e Distância</h2>
+
+        <!-- Campos com Tooltip -->
+        <div class="input-container">
+            <span class="tooltip">Digite o endereço de origem</span>
+            <input id="origem" type="text" placeholder="Digite o endereço de origem...">
+        </div>
+
+        <div class="input-container">
+            <span class="tooltip">Digite o endereço de destino</span>
+            <input id="destino" type="text" placeholder="Digite o endereço de destino...">
+        </div>
+
+        <button onclick="calcularDistancia()">Calcular</button>
+
+        <h3 id="resultado"></h3>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

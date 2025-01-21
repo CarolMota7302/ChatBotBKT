@@ -1,0 +1,113 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #3D0000, #660000, #B80000);
+    color: white;
+}
+
+.calculator-container {
+    background: rgba(0, 0, 0, 0.2); /* Fundo mais escuro */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra escurecida */
+    backdrop-filter: blur(15px); /* Efeito vidro aprimorado */
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+
+/* Estilização da Logo */
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+/* Título */
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilização dos inputs */
+.input-container {
+    position: relative;
+    display: block;
+    margin-bottom: 15px;
+}
+
+input {
+    width: 90%;
+    padding: 12px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Placeholder branco */
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Tooltip estilizada */
+.tooltip {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    top: -30px; /* Posição acima do input */
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Exibir a tooltip ao passar o mouse */
+.input-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Botão estilizado */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #B80000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #660000;
+}
+
+/* Resultado */
+h3 {
+    margin-top: 15px;
+    font-size: 18px;
+    color: white;
+}
