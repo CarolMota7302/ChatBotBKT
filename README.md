@@ -29,12 +29,6 @@ Este projeto é uma calculadora de preço e distância que utiliza a API do Goog
 |-- script.js   # Lógica de cálculo de distância e custo
 ```
 
-## Dependências
-O projeto depende da API do Google Maps para calcular a distância. Certifique-se de substituir a chave da API no link do script do Google Maps caso utilize sua própria conta:
-```html
-<script src="https://maps.googleapis.com/maps/api/js?key=SUA_CHAVE_AQUI&libraries=places"></script>
-```
-
 ## Melhorias Futuras
 - Adicionar suporte para diferentes métodos de transporte
 - Permitir configuração de tarifa personalizada por km
